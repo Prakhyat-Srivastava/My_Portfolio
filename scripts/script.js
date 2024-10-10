@@ -192,4 +192,18 @@ document.addEventListener('DOMContentLoaded', function() {
     showSkillProgress();
 });
 
+// Close Mobile Navigation on Link Click
+document.querySelectorAll('.mobile-nav a').forEach(anchor => {
+    anchor.addEventListener('click', function () {
+        // Scroll to the section as usual
+        const targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+        
+        // Close the mobile navigation menu after clicking a link
+        mobileNav.classList.remove('nav-active');
+    });
+});
 
