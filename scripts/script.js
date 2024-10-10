@@ -172,4 +172,24 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+document.addEventListener('DOMContentLoaded', function() {
+    const skillItems = document.querySelectorAll('.skill-item');
+
+    function showSkillProgress() {
+        skillItems.forEach(item => {
+            const itemPosition = item.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            // Add 'visible' class when the item is within the viewport
+            if (itemPosition < windowHeight - 50) {
+                item.classList.add('visible');
+            }
+        });
+    }
+
+    // Trigger the function on scroll and when the page loads
+    window.addEventListener('scroll', showSkillProgress);
+    showSkillProgress();
+});
+
 
