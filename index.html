@@ -3,371 +3,402 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Prakhyat Nandan Srivastava</title>
-    <link rel="stylesheet" href="styles\style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Prakhyat Nandan Srivastava | Data Analyst Portfolio</title>
+    <meta name="description" content="Portfolio of Prakhyat Nandan Srivastava - Data Analyst specializing in AI-driven insights, Python, SQL, and Power BI.">
+    
+    <link rel="icon" type="image/png" href="images/general/prakhyat_profile_image.png">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
-    <!-- Header Section -->
-    <header id="header">
-        <h1>Portfolio</h1>
-        <nav>
-            <a href="#hero">Home</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#education">Education and Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </nav>
 
-        <!-- Hamburger Menu for Mobile Navigation -->
-        <div class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+    <nav class="navbar glass-header">
+        <div class="container">
+            <a href="#" class="logo">Prakhyat<span>.Data</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#certifications">Credentials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="docs/resume.pdf" class="btn-resume" target="_blank">Resume <i class="fas fa-download"></i></a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
+    </nav>
 
-        <!-- Mobile Navigation Menu -->
-        <div class="mobile-nav">
-            <a href="#hero">Home</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#education">Education and Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
+    <header id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hello, I am</p>
+                <h1>Prakhyat N. Srivastava.</h1>
+                <h2>Leveraging AI for Data-Driven <span class="typing-text"></span></h2>
+                <p class="bio">
+                    A <strong>Data Analyst</strong> with a strong technical foundation in <strong>Artificial Intelligence</strong>. 
+                    I go beyond basic reporting by using advanced analytics and machine learning concepts to uncover deeper, actionable business insights from complex datasets.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary glow-on-hover">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="img-wrapper glass-card">
+                    <img src="images/general/prakhyat_profile_image.png" alt="Prakhyat Nandan Srivastava Profile">
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section (About Section) -->
-    <section id="hero" class="section">
-        <div class="intro-container">
-            <div class="intro-text">
-                <h3>Data Analyst & Developer</h3>
-                <h1>Hello, I’m <span>Prakhyat Nandan Srivastava</span></h1>
-                <p>I excel in analyzing complex data and building interactive dashboards using Python, Power BI, and other technologies.</p>
-                <p>I'm also passionate about creating solutions that bridge the gap between business and technology.</p>
-                <div class="intro-buttons">
-                    <a href="https://drive.google.com/file/d/1wVCHoaJVUHBQdJTMcM9Ev5A9LFgJYJ4M/view?usp=drive_link" class="btn-download">Download CV</a>
-                    <div class="social-links">
-                        <a href="https://github.com/Prakhyat-Srivastava" target="_blank">
-                            <img src="images/general/github_icon.png" alt="GitHub" class="social-icon">
-                        </a>
-                        <a href="https://www.linkedin.com/in/prakhyat-nandan-srivastava" target="_blank">
-                            <img src="images/general/linkedin_icon.png" alt="LinkedIn" class="social-icon">
-                        </a>
-                        <a href="https://www.instagram.com" target="_blank">
-                            <img src="images/general/instagram_icon.png" alt="Instagram" class="social-icon">
-                        </a>
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h3><span class="number">01.</span> About Me</h3>
+                <div class="line"></div>
+            </div>
+            <div class="about-content glass-card p-large" style="max-width: 900px; margin: auto;">
+                <p>
+                    My journey began with a deep fascination for technology, leading me to pursue an <strong>Integrated M.Tech in Artificial Intelligence</strong>. While building models was exciting, I realized the true power lies in interpreting the data *before* it hits the model, and explaining the "why" *after*.
+                </p>
+                <br>
+                <p>
+                    This led me to pivot sharply into <strong>Data Analytics</strong>. I complemented my academic background with rigorous, specialized training in modern data stacks. I am not just looking for a job; I am looking for complex data problems that require a blend of statistical understanding, programming capability (Python/SQL), and business acumen.
+                </p>
+            </div>
+        </div>
+    </section>
+
+     <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h3><span class="number">02.</span> Technical Arsenal</h3>
+                <div class="line"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category glass-card glow-on-hover">
+                    <h4><i class="fas fa-database"></i> Data Analysis & BI</h4>
+                    <div class="skill-icons colorful-icons">
+                        <div class="skill-item"><img src="images/skills/powerbi_logo.png" alt="Power BI"><span>Power BI</span></div>
+                        <div class="skill-item"><img src="images/skills/tableau_logo.png" alt="Tableau"><span>Tableau</span></div>
+                        <div class="skill-item"><img src="images/skills/sql_logo.png" alt="SQL"><span>SQL</span></div>
+                        <div class="skill-item"><img src="images/skills/excel_logo.png" alt="Excel"><span>Excel</span></div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Right Image Section -->
-            <div class="intro-image">
-                <div class="image-circle">
-                    <img src="images/general/prakhyat_profile_image.png" alt="Prakhyat's Image" class="profile-image">
+                <div class="skill-category glass-card glow-on-hover">
+                    <h4><i class="fas fa-code"></i> Programming</h4>
+                    <div class="skill-icons colorful-icons">
+                        <div class="skill-item"><img src="images/skills/python_logo.png" alt="Python"><span>Python</span></div>
+                        <div class="skill-item"><img src="images/skills/r_logo.png" alt="R Stats"><span>R</span></div>
+                        <div class="skill-item"><img src="images/skills/jupyter_logo.png" alt="Jupyter"><span>Jupyter</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card glow-on-hover">
+                    <h4><i class="fas fa-cloud"></i> Cloud & AI Workflows</h4>
+                    
+                    <div class="tech-group">
+                        <h5>CLOUD INFRASTRUCTURE</h5>
+                        <div class="skill-icons colorful-icons">
+                            <div class="skill-item"><img src="images/skills/aws_logo.png" alt="AWS"><span>AWS</span></div>
+                        </div>
+                    </div>
+
+                    <div class="tech-group mt-4">
+                        <h5>AI-ASSISTED PRODUCTIVITY</h5>
+                        <div class="skill-icons colorful-icons">
+                            <div class="skill-item"><img src="images/ai/chatgpt.png" alt="ChatGPT"><span>ChatGPT</span></div>
+                            <div class="skill-item"><img src="images/ai/gemini.png" alt="Gemini"><span>Gemini</span></div>
+                            <div class="skill-item"><img src="images/ai/claude.png" alt="Claude"><span>Claude</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Certifications Section (No Changes) -->
-    <section id="certifications" class="section">
-        <h2>Certifications</h2>
-        <div class="certifications-wrapper">
-            <div class="certifications-container">
-                <!-- Certification cards remain unchanged -->
-                <div class="certification-card">
-                    <img src="images\certifications\aws_certified_solutions_architect.png" alt="AWS Cloud Practitioner" class="certification-image">
-                </div>
-                <div class="certification-card">
-                    <img src="images\certifications\aws_cloud_practitioner.png" alt="AWS Solutions Architect" class="certification-image">
-                </div>
-                <div class="certification-card">
-                    <img src="images\certifications\applied_machine_learning.png" alt="Machine Learning in Python" class="certification-image">
-                </div>
-                <div class="certification-card">
-                    <img src="images\certifications\azure_ai_fundamentals.png" alt="Azure AI Fundamentals" class="certification-image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education and Skills Section -->
-    <section id="education" class="section">
-        <h2>Education and Skills</h2>
-        <div class="education-info">
-            <h3>Int. MTech (CSE) Specialization in AI</h3>
-            <p>Vellore Institute of Technology, Bhopal | CGPA: 8.28/10 (Ongoing)</p>
-        </div>
-            <!-- Skills Section -->
-            <div class="skills-container">
-                <!-- Individual Skill Item -->
-                <div class="skill-item">
-                    <img src="images/skills/excel_logo.png" alt="Excel Logo" class="skill-logo">
-                    <h4>Microsoft Excel</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="--progress-level: 90%;"></div>
-                    </div>
-                </div>
-        
-                <div class="skill-item">
-                    <img src="images/skills/python_logo.png" alt="Python Logo" class="skill-logo">
-                    <h4>Python</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="--progress-level: 85%;"></div>
-                    </div>
-                </div>
-        
-                <div class="skill-item">
-                    <img src="images/skills/r_logo.png" alt="R Logo" class="skill-logo">
-                    <h4>R</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="--progress-level: 75%;"></div>
-                    </div>
-                </div>
-        
-                <div class="skill-item">
-                    <img src="images/skills/sql_logo.png" alt="SQL Logo" class="skill-logo">
-                    <h4>SQL</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="--progress-level: 75%;"></div>
-                    </div>
-                </div>
-        
-                <div class="skill-item">
-                    <img src="images/skills/jupyter_logo.png" alt="Jupyter Logo" class="skill-logo">
-                    <h4>Jupyter Notebook</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="--progress-level: 100%;"></div>
-                    </div>
-                </div>
-        
-                <div class="skill-item">
-                    <img src="images/skills/powerbi_logo.png" alt="Power BI Logo" class="skill-logo">
-                    <h4>Microsoft Power BI</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="--progress-level: 95%;"></div>
-                    </div>
-                </div>
-        
-                <div class="skill-item">
-                    <img src="images/skills/tableau_logo.png" alt="Tableau Logo" class="skill-logo">
-                    <h4>Tableau</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="--progress-level: 85%;"></div>
-                    </div>
-                </div>
-        
-                <div class="skill-item">
-                    <img src="images/skills/aws_logo.png" alt="AWS Logo" class="skill-logo">
-                    <h4>AWS</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="--progress-level: 50%;"></div>
-                    </div>
-                </div>
-        
-                <div class="skill-item">
-                    <img src="images/skills/spark_logo.png" alt="Apache Spark Logo" class="skill-logo">
-                    <h4>Apache Spark</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="--progress-level: 20%;"></div>
-                    </div>
-                </div>
-        
-                <div class="skill-item">
-                    <img src="images/skills/html_logo.png" alt="HTML Logo" class="skill-logo">
-                    <h4>HTML</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="--progress-level: 70%;"></div>
-                    </div>
-                </div>
-        
-                <div class="skill-item">
-                    <img src="images/skills/css_logo.png" alt="CSS Logo" class="skill-logo">
-                    <h4>CSS</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="--progress-level: 45%;"></div>
-                    </div>
-                </div>
-        
-                <div class="skill-item">
-                    <img src="images/skills/js_logo.png" alt="JavaScript Logo" class="skill-logo">
-                    <h4>JavaScript</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="--progress-level: 30%;"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
-    <!-- Projects Section -->
     <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="projects-wrapper">
-            <div class="projects-container">
-                <div class="project-card">
-                    <img src="images/projects/heart_disease_diagnostic.png" alt="Heart Disease Diagnostic Analysis">
-                    <h3>Heart Disease Diagnostic Analysis</h3>
-                    <p>Analyzed clinical data to predict heart disease using Python and data visualization.</p>
-                    <a href="https://github.com/Prakhyat-Srivastava/HeartDisease-Analysis" class="btn-download">View on GitHub</a>
+        <div class="container">
+            <div class="section-header">
+                <h3><span class="number">03.</span> Featured Projects</h3>
+                <div class="line"></div>
+            </div>
+
+            <div class="projects-wrapper">
+                
+                <div class="project-card glass-card glow-on-hover hidden-animate">
+                    <div class="project-img">
+                        <img src="images/projects/amazon_sales_analysis.png" alt="Amazon Sales Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-top">
+                            <div class="folder-icon"><i class="far fa-folder-open"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/Prakhyat-Srivastava/Amazon-Sales-Dashboard" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Amazon Sales Dashboard</h3>
+                        <p>
+                            Developed an interactive Power BI dashboard to track multi-year revenue and profit trends. 
+                            Utilized complex DAX calculations for year-over-year growth and created dynamic filtering for regional sales performance.
+                        </p>
+                        <ul class="project-tech">
+                            <li>Power BI</li>
+                            <li>DAX</li>
+                            <li>Data Modeling</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <img src="images/projects/amazon_sales_analysis.png" alt="Amazon Sales Analysis">
-                    <h3>Amazon Sales Analysis</h3>
-                    <p>Analyzed Amazon sales data to identify trends and build visualizations.</p>
-                    <a href="https://github.com/Prakhyat-Srivastava/Amazon-Sales-Dashboard" class="btn-download">View on GitHub</a>
+
+                <div class="project-card glass-card glow-on-hover hidden-animate">
+                    <div class="project-img">
+                        <img src="images/projects/heart_disease_diagnostic.png" alt="Heart Disease Analysis">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-top">
+                            <div class="folder-icon"><i class="far fa-folder-open"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/Prakhyat-Srivastava/HeartDisease-Analysis" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Heart Disease Diagnostic Analysis</h3>
+                        <p>
+                            Performed rigorous ETL processes on clinical datasets. Conducted exploratory data analysis (EDA) using Python and Tableau to identify key indicators and correlations related to heart disease risks across demographics.
+                        </p>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>Pandas</li>
+                            <li>Tableau</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <img src="images/projects/hr_employee_attrition.png" alt="HR Employee Attrition Analysis">
-                    <h3>HR Employee Attrition Analysis</h3>
-                    <p>Developed a dashboard to analyze employee attrition and predict trends.</p>
-                    <a href="https://github.com/Prakhyat-Srivastava/Employee-Attrition-Dashboard" class="btn-download">View on GitHub</a>
+
+                <div class="project-card glass-card glow-on-hover hidden-animate">
+                    <div class="project-img">
+                        <img src="images/projects/hr_employee_attrition.png" alt="HR Analytics">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-top">
+                            <div class="folder-icon"><i class="far fa-folder-open"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/Prakhyat-Srivastava/Employee-Attrition-Dashboard" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>HR Attrition Analytics</h3>
+                        <p>
+                            Designed an HR analytics tool to visualize employee retention patterns. The dashboard isolates risk factors such as distance from work and job satisfaction scores to aid retention strategies.
+                        </p>
+                        <ul class="project-tech">
+                            <li>Power BI</li>
+                            <li>HR Analytics</li>
+                            <li>EDA</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h3><span class="number">04.</span> Experience & Education Timeline</h3>
+                <div class="line"></div>
+            </div>
+
+            <div class="timeline">
+                
+                <div class="timeline-item left hidden-animate">
+                    <div class="content glass-card glow-on-hover">
+                        <h2>Jan 2025 - Dec 2025</h2>
+                        <p class="role">Data Analytics Trainee</p>
+                        <p class="company"><strong>Specialized EdTech Institute</strong> | Gurugram, India</p>
+                        <p class="desc">
+                            Intensive training in Excel, SQL, Power BI, Tableau, and Python. Worked on case-based assignments and dashboard tasks, practicing full transformation and validation workflows.
+                        </p>
+                    </div>
+                </div>
+                
+                 <div class="timeline-item right hidden-animate">
+                    <div class="content glass-card glow-on-hover">
+                        <h2>Jan 2025 - Jun 2025</h2>
+                        <p class="role">Advanced Certification in Data Analytics</p>
+                        <p class="company"><strong>Premier Technology Institute (E&ICT Academy)</strong></p>
+                        <p class="desc">
+                            Six-month advanced program focusing on data analytics methodologies and tools.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left hidden-animate">
+                    <div class="content glass-card glow-on-hover">
+                        <h2>Apr 2024 - May 2024</h2>
+                        <p class="role">Data Analytics Intern</p>
+                        <p class="company"><strong>Internship Studio</strong> | Remote</p>
+                        <p class="desc">
+                            Cleaned datasets and prepared analysis-ready outputs for reporting. Presented insights using clear visuals to non-technical stakeholders.
+                        </p>
+                    </div>
+                </div>
+
+                 <div class="timeline-item right hidden-animate">
+                    <div class="content glass-card glow-on-hover">
+                        <h2>2020 - 2025</h2>
+                        <p class="role">Integrated M.Tech (CSE) in AI</p>
+                        <p class="company"><strong>VIT Bhopal University</strong> | Bhopal, Madhya Pradesh</p>
+                        <p class="desc">
+                            Specialized in Artificial Intelligence. Achieved a CGPA of <strong>8.61/10</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left hidden-animate">
+                    <div class="content glass-card glow-on-hover">
+                        <h2>2020</h2>
+                        <p class="role">Higher Secondary Education (Class XII)</p>
+                        <p class="company"><strong>Doon Global School</strong> | Dehradun, Uttarakhand</p>
+                        <p class="desc">
+                            CBSE Board. Secured <strong>75.33%</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right hidden-animate">
+                    <div class="content glass-card glow-on-hover">
+                        <h2>2018</h2>
+                        <p class="role">Secondary Education (Class X)</p>
+                        <p class="company"><strong>St. Clare's Sr. Sec. School</strong> | Agra, Uttar Pradesh</p>
+                        <p class="desc">
+                            CBSE Board. Secured <strong>63.00%</strong>.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="section research-section">
+        <div class="container">
+            <div class="section-header">
+                <h3><span class="number">05.</span> Research Publication</h3>
+                <div class="line"></div>
+            </div>
+            <div class="research-card glass-card glow-on-hover hidden-animate">
+                <div class="research-content">
+                    <h4>Scopus Indexed Publication (2024)</h4>
+                    <h3>Optimized ML Framework for Sentiment Analysis</h3>
+                    <p>
+                        Published in the <em>Journal of Electrical Systems</em>. I developed and validated a high-performance <strong>Random Forest model</strong> that achieved <strong>98.83% accuracy</strong> in analyzing large-scale e-commerce product reviews.
+                    </p>
+                    
+                    <div class="citation-box glass-inset">
+                        <i class="fas fa-quote-left accent-icon"></i> 
+                        <strong>P. N. Srivastava</strong>, "Optimized Machine Learning Framework for Sentiment Analysis for Amazon Product Reviews," 
+                        <em>Journal of Electrical Systems</em>, vol. 20, no. 11s, pp. 3070-3079, 2024. <br>
+                        <span class="doi-text"><strong>DOI:</strong> 10.52783/jes.8003</span>
+                    </div>
+
+                    <div class="research-links">
+                        <a href="https://doi.org/10.52783/jes.8003" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i> Read Full Paper
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Optimized Experience Section -->
-    <section id="experience" class="section">
-        <h2>Experience</h2>
-        <div class="experience-grid">
-            <!-- Experience 1: Data Analyst Intern -->
-            <div class="experience-card">
-                <!-- Left Column: Experience Details -->
-                <div class="experience-details">
-                    <h3>Data Analyst Intern</h3>
-                    <p><strong>Company:</strong> Physics Wallah Pvt. Ltd.</p>
-                    <p><strong>Duration:</strong> March 28, 2024 - June 12, 2024</p>
-                    <p>Conducted EDA, performed ETL operations, and created dashboards.</p>
-                </div>
-
-                <!-- Right Column: Certificate Preview -->
-                <div class="certificate-thumbnail">
-                    <img src="images/certifications/pw_internship_certificate.png" alt="PW Internship Certificate" class="small-certificate">
-                    <div class="certificate-hover">
-                        <span class="view-label">View Certificate</span>
-                    </div>
-                </div>
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h3><span class="number">06.</span> Credentials & Certifications</h3>
+                <div class="line"></div>
             </div>
+            
+            <div class="cert-grid">
+                
+                <a href="images/certifications/IIT_DA.png" data-lightbox="certs" data-title="Advanced Data Analytics Certification" class="cert-card glass-card hidden-animate">
+                    <img src="images/certifications/IIT_DA.png" alt="Advanced Data Analytics">
+                </a>
+                <a href="images/certifications/analytixlabs_DA.png" data-lightbox="certs" data-title="Certified Data Analyst (SQL/Power BI)" class="cert-card glass-card hidden-animate">
+                    <img src="images/certifications/analytixlabs_DA.png" alt="Certified Data Analyst">
+                </a>
+                 <a href="images/certifications/analytixlabs_DA_python.png" data-lightbox="certs" data-title="Certified Data Analyst (Python)" class="cert-card glass-card hidden-animate">
+                    <img src="images/certifications/analytixlabs_DA_python.png" alt="Certified Data Analyst Python">
+                </a>
 
-            <!-- Experience 2: Accenture Data Analytics Simulation -->
-            <div class="experience-card">
-                <div class="experience-details">
-                    <h3>Accenture Data Analytics Simulation</h3>
-                    <p><strong>Company:</strong> Accenture (Forage)</p>
-                    <p><strong>Duration:</strong> April 2024</p>
-                    <p>Analyzed data, developed dashboards, and presented key findings.</p>
-                </div>
-                <div class="certificate-thumbnail">
-                    <img src="images/certifications/accenture_certificate.png" alt="Accenture Certificate" class="small-certificate">
-                    <div class="certificate-hover">
-                        <span class="view-label">View Certificate</span>
-                    </div>
-                </div>
-            </div>
+                <a href="images/certifications/aws_certified_solutions_architect.png" data-lightbox="certs" data-title="AWS Solutions Architect Associate" class="cert-card glass-card hidden-animate">
+                    <img src="images/certifications/aws_certified_solutions_architect.png" alt="AWS Solutions Architect">
+                </a>
+                <a href="images/certifications/aws_cloud_practitioner.png" data-lightbox="certs" data-title="AWS Cloud Practitioner" class="cert-card glass-card hidden-animate">
+                    <img src="images/certifications/aws_cloud_practitioner.png" alt="AWS Cloud Practitioner">
+                </a>
+                <a href="images/certifications/azure_ai_fundamentals.png" data-lightbox="certs" data-title="Microsoft Azure AI Fundamentals" class="cert-card glass-card hidden-animate">
+                    <img src="images/certifications/azure_ai_fundamentals.png" alt="Azure AI Fundamentals">
+                </a>
+                <a href="images/certifications/applied_machine_learning.png" data-lightbox="certs" data-title="Applied Machine Learning (UMich)" class="cert-card glass-card hidden-animate">
+                    <img src="images/certifications/applied_machine_learning.png" alt="Applied Machine Learning">
+                </a>
 
-            <!-- Experience 3: Tata Data Analytics Simulation -->
-            <div class="experience-card">
-                <div class="experience-details">
-                    <h3>Tata Data Analytics Simulation</h3>
-                    <p><strong>Company:</strong> Tata (Forage)</p>
-                    <p><strong>Duration:</strong> May 2024</p>
-                    <p>Created data visualizations and reports for client engagement.</p>
-                </div>
-                <div class="certificate-thumbnail">
-                    <img src="images/certifications/tata_certificate.png" alt="Tata Certificate" class="small-certificate">
-                    <div class="certificate-hover">
-                        <span class="view-label">View Certificate</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Full Screen Certificate Modal -->
-        <div id="certificate-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-btn">&times;</span>
-                <img src="" alt="Full Certificate" id="full-certificate" class="full-certificate">
+                <a href="images/certifications/tata_certificate.png" data-lightbox="certs" data-title="Tata Data Visualisation Job Simulation" class="cert-card glass-card hidden-animate">
+                    <img src="images/certifications/tata_certificate.png" alt="Tata Job Simulation">
+                </a>
+                 <a href="images/certifications/excel_intermediate_level.png" data-lightbox="certs" data-title="Excel Intermediate Level" class="cert-card glass-card hidden-animate">
+                    <img src="images/certifications/excel_intermediate_level.png" alt="Excel Certificate">
+                </a>
+                 <a href="images/certifications/accenture_certificate.png" data-lightbox="certs" data-title="PW Internship Certificate" class="cert-card glass-card hidden-animate">
+                    <img src="images/certifications/accenture_certificate.png" alt="Accenture Certificate">
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Full Screen Certificate Modal -->
-    <div id="certificate-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <img src="" alt="Full Certificate" id="full-certificate" class="full-certificate">
-        </div>
-    </div>
-</section>
-
-    <!-- Contact Section -->
     <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            <!-- Centered Introductory Text -->
-            <p>If you would like to connect, feel free to reach out via Email, LinkedIn, or WhatsApp!</p>
-            <div class="contact-links-vertical centered">
-                <a href="mailto:prakhyatsrivastava024@gmail.com" class="contact-item">
-                    <img src="images/general/email_icon.png" alt="Email Icon">
-                    <span>prakhyatsrivastava024@gmail.com</span>
-                </a>
-                <a href="https://www.linkedin.com/in/prakhyat-nandan-srivastava" target="_blank" class="contact-item">
-                    <img src="images/general/linkedin_icon.png" alt="LinkedIn Icon">
-                    <span>Connect on LinkedIn</span>
-                </a>
-                <a href="https://wa.me/918532978811?text=Hello,%20I%20would%20like%20to%20connect%20regarding%20your%20portfolio." target="_blank" class="contact-item">
-                    <img src="images/general/whatsapp_icon.png" alt="WhatsApp Icon">
-                    <span>Message on WhatsApp</span>
-                </a>
+        <div class="container contact-container glass-card p-large" style="max-width: 700px;">
+            <p class="subtitle">What's Next?</p>
+            <h2 class="title">Let's Connect</h2>
+            <p class="contact-text">
+                I am actively seeking full-time opportunities in <strong>Data Analytics</strong> and <strong>Business Intelligence</strong>. 
+                If you are looking for a technical analyst who understands the business side of data, my inbox is always open.
+            </p>
+            <a href="mailto:prakhyatsrivastava024@gmail.com" class="btn btn-primary big-btn glow-on-hover">Say Hello</a>
+            
+            <div class="social-links">
+                <a href="https://github.com/Prakhyat-Srivastava" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/prakhyat-nandan-srivastava" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:prakhyatsrivastava024@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+918532978811" title="Phone"><i class="fas fa-phone-alt"></i></a>
             </div>
         </div>
     </section>
-    
-    
-    
 
-    <!-- Floating Hire Me Button -->
-    <div id="floating-hire-button">
-        <button class="hire-me-btn">Hire Me</button>
-    </div>
-
-    <!-- Modal Structure -->
-    <div id="hire-me-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Hire Me</h2>
-            <p class="intro-text-left">I am a dedicated professional, and I am passionate about contributing to impactful projects. Feel free to reach out if you’re interested in collaborating!</p>
-            <div class="contact-info">
-                <p>
-                    <img src="images/general/email_icon.png" class="contact-icon" alt="Email Icon">
-                    <strong>Email:</strong>
-                    <a href="mailto:prakhyatsrivastava024@gmail.com" class="contact-link">prakhyatsrivastava024@gmail.com</a>
-                </p>
-                <p>
-                    <img src="images/general/linkedin_icon.png" class="contact-icon" alt="LinkedIn Icon">
-                    <strong>LinkedIn:</strong>
-                    <a href="https://www.linkedin.com/in/prakhyat-nandan-srivastava" target="_blank" class="contact-link linkedin-btn">
-                        Connect on LinkedIn
-                    </a>
-                </p>
-                <p>
-                    <img src="images/general/whatsapp_icon.png" class="contact-icon" alt="Phone Icon">
-                    <strong>Phone:</strong>
-                    <a href="https://wa.me/918532978811?text=Hello,%20I%20would%20like%20to%20connect%20regarding%20your%20portfolio." target="_blank" class="contact-link">
-                        +91 8532978811
-                    </a>
-                </p>
-            </div>
+    <footer class="glass-footer">
+        <div class="container">
+            <p>Designed & Developed by <strong>Prakhyat Nandan Srivastava</strong></p>
+            <p class="copyright">&copy; 2026. Built for the modern data era.</p>
         </div>
-    </div>
+    </footer>
 
-
-    <!-- JavaScript File -->
-    <script src="scripts\script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
-    
