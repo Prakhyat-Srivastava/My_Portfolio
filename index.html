@@ -3,405 +3,474 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prakhyat Nandan Srivastava | Data Analyst Portfolio</title>
-    <meta name="description" content="Portfolio of Prakhyat Nandan Srivastava - Data Analyst specializing in AI-driven insights, Python, SQL, and Power BI.">
-    
-    <link rel="icon" type="image/png" href="images/general/prakhyat_profile_image.png">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <meta name="description" content="Prakhyat Nandan Srivastava - Data Analyst Portfolio. Expert in SQL, Python, Power BI, Tableau, and Machine Learning.">
+    <meta name="keywords" content="Data Analyst, SQL, Python, Power BI, Tableau, Machine Learning, AI, Portfolio">
+    <meta name="author" content="Prakhyat Nandan Srivastava">
+    <title>Prakhyat Nandan Srivastava | Data Analyst</title>
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Animated Background Grid -->
+    <div class="bg-grid"></div>
+    
+    <!-- Floating Data Particles -->
+    <div class="data-particles" id="dataParticles"></div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor cursor-ring"></div>
+    <div class="cursor cursor-dot"></div>
 
-    <div class="cursor-dot-outline"></div>
-    <div class="cursor-dot"></div>
-
-    <nav class="navbar glass-header">
-        <div class="container">
-            <a href="#" class="logo">Prakhyat<span>.Data</span></a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#timeline">Timeline</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#certifications">Credentials</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="docs/resume.pdf" class="btn-resume" target="_blank">Resume <i class="fas fa-download"></i></a></li>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#technologies" class="nav-link">Technologies</a></li>
+                <li><a href="#ai-tools" class="nav-link">AI Tools</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
         </div>
     </nav>
 
-    <header id="home" class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <p class="greeting">Hello, I am</p>
-                <h1>Prakhyat Nandan Srivastava.</h1>
-                <h2>Leveraging AI for Data-Driven <span class="typing-text"></span></h2>
-                <p class="bio">
-                    A <strong>Data Analyst</strong> with a strong technical foundation in <strong>Artificial Intelligence</strong>. 
-                    I go beyond basic reporting by using advanced analytics and machine learning concepts to uncover deeper, actionable business insights from complex datasets.
-                </p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary glow-on-hover">View Projects</a>
-                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="img-wrapper glass-card">
-                    <img src="images/general/prakhyat_profile_image.png" alt="Prakhyat Nandan Srivastava Profile">
-                </div>
-            </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
         </div>
-    </header>
-
-    <section id="about" class="section">
         <div class="container">
-            <div class="section-header">
-                <h3><span class="number">01.</span> About Me</h3>
-                <div class="line"></div>
-            </div>
-            <div class="about-content glass-card p-large" style="max-width: 900px; margin: auto;">
-                <p>
-                    My journey began with a deep fascination for technology, leading me to pursue an <strong>Integrated M.Tech in Artificial Intelligence</strong>. While building models was exciting, I realized the true power lies in interpreting the data *before* it hits the model, and explaining the "why" *after*.
-                </p>
-                <br>
-                <p>
-                    This led me to pivot sharply into <strong>Data Analytics</strong>. I complemented my academic background with rigorous, specialized training in modern data stacks. I am not just looking for a job; I am looking for complex data problems that require a blend of statistical understanding, programming capability (Python/SQL), and business acumen.
-                </p>
-            </div>
-        </div>
-    </section>
-
-     <section id="skills" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h3><span class="number">02.</span> Technical Arsenal</h3>
-                <div class="line"></div>
-            </div>
-            
-            <div class="skills-grid">
-                <div class="skill-category glass-card glow-on-hover">
-                    <h4><i class="fas fa-database"></i> Data Analysis & BI</h4>
-                    <div class="skill-icons colorful-icons">
-                        <div class="skill-item"><img src="images/skills/powerbi_logo.png" alt="Power BI"><span>Power BI</span></div>
-                        <div class="skill-item"><img src="images/skills/tableau_logo.png" alt="Tableau"><span>Tableau</span></div>
-                        <div class="skill-item"><img src="images/skills/sql_logo.png" alt="SQL"><span>SQL</span></div>
-                        <div class="skill-item"><img src="images/skills/excel_logo.png" alt="Excel"><span>Excel</span></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="availability-badge">
+                        <span class="pulse-dot"></span>
+                        Available for work
                     </div>
-                </div>
-
-                <div class="skill-category glass-card glow-on-hover">
-                    <h4><i class="fas fa-code"></i> Programming</h4>
-                    <div class="skill-icons colorful-icons">
-                        <div class="skill-item"><img src="images/skills/python_logo.png" alt="Python"><span>Python</span></div>
-                        <div class="skill-item"><img src="images/skills/r_logo.png" alt="R Stats"><span>R</span></div>
-                        <div class="skill-item"><img src="images/skills/jupyter_logo.png" alt="Jupyter"><span>Jupyter</span></div>
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Prakhyat Nandan Srivastava</span>
+                    </h1>
+                    <div class="typewriter-container">
+                        <span id="typewriter"></span><span class="cursor-blink">|</span>
                     </div>
-                </div>
-
-                <div class="skill-category glass-card glow-on-hover">
-                    <h4><i class="fas fa-cloud"></i> Cloud & AI Workflows</h4>
-                    
-                    <div class="tech-group">
-                        <h5>CLOUD INFRASTRUCTURE</h5>
-                        <div class="skill-icons colorful-icons">
-                            <div class="skill-item"><img src="images/skills/aws_logo.png" alt="AWS"><span>AWS</span></div>
-                        </div>
-                    </div>
-
-                    <div class="tech-group mt-4">
-                        <h5>AI-ASSISTED PRODUCTIVITY</h5>
-                        <div class="skill-icons colorful-icons">
-                            <div class="skill-item"><img src="images/ai/chatgpt.png" alt="ChatGPT"><span>ChatGPT</span></div>
-                            <div class="skill-item"><img src="images/ai/gemini.png" alt="Gemini"><span>Gemini</span></div>
-                            <div class="skill-item"><img src="images/ai/claude.png" alt="Claude"><span>Claude</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h3><span class="number">03.</span> Featured Projects</h3>
-                <div class="line"></div>
-            </div>
-
-            <div class="projects-wrapper">
-                
-                <div class="project-card glass-card glow-on-hover hidden-animate">
-                    <div class="project-img">
-                        <img src="images/projects/amazon_sales_analysis.png" alt="Amazon Sales Dashboard">
-                    </div>
-                    <div class="project-info">
-                        <div class="project-top">
-                            <div class="folder-icon"><i class="far fa-folder-open"></i></div>
-                            <div class="project-links">
-                                <a href="https://github.com/Prakhyat-Srivastava/Amazon-Sales-Dashboard" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>Amazon Sales Dashboard</h3>
-                        <p>
-                            Developed an interactive Power BI dashboard to track multi-year revenue and profit trends. 
-                            Utilized complex DAX calculations for year-over-year growth and created dynamic filtering for regional sales performance.
-                        </p>
-                        <ul class="project-tech">
-                            <li>Power BI</li>
-                            <li>DAX</li>
-                            <li>Data Modeling</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="project-card glass-card glow-on-hover hidden-animate">
-                    <div class="project-img">
-                        <img src="images/projects/heart_disease_diagnostic.png" alt="Heart Disease Analysis">
-                    </div>
-                    <div class="project-info">
-                        <div class="project-top">
-                            <div class="folder-icon"><i class="far fa-folder-open"></i></div>
-                            <div class="project-links">
-                                <a href="https://github.com/Prakhyat-Srivastava/HeartDisease-Analysis" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>Heart Disease Diagnostic Analysis</h3>
-                        <p>
-                            Performed rigorous ETL processes on clinical datasets. Conducted exploratory data analysis (EDA) using Python and Tableau to identify key indicators and correlations related to heart disease risks across demographics.
-                        </p>
-                        <ul class="project-tech">
-                            <li>Python</li>
-                            <li>Pandas</li>
-                            <li>Tableau</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="project-card glass-card glow-on-hover hidden-animate">
-                    <div class="project-img">
-                        <img src="images/projects/hr_employee_attrition.png" alt="HR Analytics">
-                    </div>
-                    <div class="project-info">
-                        <div class="project-top">
-                            <div class="folder-icon"><i class="far fa-folder-open"></i></div>
-                            <div class="project-links">
-                                <a href="https://github.com/Prakhyat-Srivastava/Employee-Attrition-Dashboard" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>HR Attrition Analytics</h3>
-                        <p>
-                            Designed an HR analytics tool to visualize employee retention patterns. The dashboard isolates risk factors such as distance from work and job satisfaction scores to aid retention strategies.
-                        </p>
-                        <ul class="project-tech">
-                            <li>Power BI</li>
-                            <li>HR Analytics</li>
-                            <li>EDA</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="timeline" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h3><span class="number">04.</span> Experience & Education Timeline</h3>
-                <div class="line"></div>
-            </div>
-
-            <div class="timeline">
-                
-                <div class="timeline-item left hidden-animate">
-                    <div class="content glass-card glow-on-hover">
-                        <h2>Jan 2025 - Dec 2025</h2>
-                        <p class="role">Data Analytics Trainee</p>
-                        <p class="company"><strong>Specialized EdTech Institute</strong> | Gurugram, India</p>
-                        <p class="desc">
-                            Intensive training in Excel, SQL, Power BI, Tableau, and Python. Worked on case-based assignments and dashboard tasks, practicing full transformation and validation workflows.
-                        </p>
-                    </div>
-                </div>
-                
-                 <div class="timeline-item right hidden-animate">
-                    <div class="content glass-card glow-on-hover">
-                        <h2>Jan 2025 - Jun 2025</h2>
-                        <p class="role">Advanced Certification in Data Analytics</p>
-                        <p class="company"><strong>Premier Technology Institute (E&ICT Academy)</strong></p>
-                        <p class="desc">
-                            Six-month advanced program focusing on data analytics methodologies and tools.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item left hidden-animate">
-                    <div class="content glass-card glow-on-hover">
-                        <h2>Apr 2024 - May 2024</h2>
-                        <p class="role">Data Analytics Intern</p>
-                        <p class="company"><strong>Internship Studio</strong> | Remote</p>
-                        <p class="desc">
-                            Cleaned datasets and prepared analysis-ready outputs for reporting. Presented insights using clear visuals to non-technical stakeholders.
-                        </p>
-                    </div>
-                </div>
-
-                 <div class="timeline-item right hidden-animate">
-                    <div class="content glass-card glow-on-hover">
-                        <h2>2020 - 2025</h2>
-                        <p class="role">Integrated M.Tech (CSE) in AI</p>
-                        <p class="company"><strong>VIT Bhopal University</strong> | Bhopal, Madhya Pradesh</p>
-                        <p class="desc">
-                            Specialized in Artificial Intelligence. Achieved a CGPA of <strong>8.61/10</strong>.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item left hidden-animate">
-                    <div class="content glass-card glow-on-hover">
-                        <h2>2020</h2>
-                        <p class="role">Higher Secondary Education (Class XII)</p>
-                        <p class="company"><strong>Doon Global School</strong> | Dehradun, Uttarakhand</p>
-                        <p class="desc">
-                            PCM | CBSE Board.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item right hidden-animate">
-                    <div class="content glass-card glow-on-hover">
-                        <h2>2018</h2>
-                        <p class="role">Secondary Education (Class X)</p>
-                        <p class="company"><strong>St. Clare's Sr. Sec. School</strong> | Agra, Uttar Pradesh</p>
-                        <p class="desc">
-                            CBSE Board.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="research" class="section research-section">
-        <div class="container">
-            <div class="section-header">
-                <h3><span class="number">05.</span> Research Publication</h3>
-                <div class="line"></div>
-            </div>
-            <div class="research-card glass-card glow-on-hover hidden-animate">
-                <div class="research-content">
-                    <h4>Scopus Indexed Publication (2024)</h4>
-                    <h3>Optimized ML Framework for Sentiment Analysis</h3>
-                    <p>
-                        Published in the <em>Journal of Electrical Systems</em>. I developed and validated a high-performance <strong>Random Forest model</strong> that achieved <strong>98.83% accuracy</strong> in analyzing large-scale e-commerce product reviews.
+                    <p class="hero-description">
+                        Data Analyst specializing in transforming complex data into actionable insights. 
+                        Expert in SQL, Python, Power BI, and Machine Learning with a passion for AI-driven solutions.
                     </p>
-                    
-                    <div class="citation-box glass-inset">
-                        <i class="fas fa-quote-left accent-icon"></i> 
-                        <strong>P. N. Srivastava</strong>, "Optimized Machine Learning Framework for Sentiment Analysis for Amazon Product Reviews," 
-                        <em>Journal of Electrical Systems</em>, vol. 20, no. 11s, pp. 3070-3079, 2024. <br>
-                        <span class="doi-text"><strong>DOI:</strong> 10.52783/jes.8003</span>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Hire Me</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                        <a href="https://wa.me/918532978811?text=Hi%20Prakhyat,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you!" target="_blank" class="btn btn-whatsapp">
+                            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            WhatsApp
+                        </a>
+                        <a href="mailto:prakhyatsrivastava024@gmail.com?subject=Opportunity%20from%20Portfolio&body=Hi%20Prakhyat,%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity%20with%20you.%0A%0ABest%20regards" class="btn btn-email">
+                            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            Email
+                        </a>
+                        <a href="assets/resume.pdf" target="_blank" class="btn btn-resume">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                            View Resume
+                        </a>
                     </div>
-
-                    <div class="research-links">
-                        <a href="https://journal.esrgroups.org/jes/article/view/8003/5450" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-external-link-alt"></i> Read Full Paper
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/prakhyat-nandan-srivastava" target="_blank" class="social-link linkedin" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://github.com/Prakhyat-Srivastava" target="_blank" class="social-link github" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="mailto:prakhyatsrivastava024@gmail.com?subject=Opportunity%20from%20Portfolio&body=Hi%20Prakhyat,%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity%20with%20you.%0A%0ABest%20regards" class="social-link email" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </a>
+                        <a href="https://wa.me/918532978811?text=Hi%20Prakhyat,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you!" target="_blank" class="social-link whatsapp" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         </a>
                     </div>
                 </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <!-- Floating Analytics Icons -->
+                        <div class="floating-icon icon-1" data-tilt>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <path d="M3 9h18M9 21V9"/>
+                            </svg>
+                        </div>
+                        <div class="floating-icon icon-2" data-tilt>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                            </svg>
+                        </div>
+                        <div class="floating-icon icon-3" data-tilt>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+                                <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+                            </svg>
+                        </div>
+                        <div class="floating-icon icon-4" data-tilt>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                                <polyline points="17 6 23 6 23 12"/>
+                            </svg>
+                        </div>
+                        <div class="floating-icon icon-5" data-tilt>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 20v-6M6 20V10M18 20V4"/>
+                            </svg>
+                        </div>
+                        <div class="floating-icon icon-6" data-tilt>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                                <polyline points="2 17 12 22 22 17"/>
+                                <polyline points="2 12 12 17 22 12"/>
+                            </svg>
+                        </div>
+                        <div class="profile-ring">
+                            <div class="profile-glow"></div>
+                            <img src="images/profile.png" alt="Prakhyat Nandan Srivastava" class="profile-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator-wrapper">
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll to explore</span>
+                <div class="scroll-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M19 12l-7 7-7-7"/>
+                    </svg>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="certifications" class="section">
+    <!-- About Section -->
+    <section id="about" class="about section">
         <div class="container">
             <div class="section-header">
-                <h3><span class="number">06.</span> Credentials & Certifications</h3>
-                <div class="line"></div>
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Who I <span class="gradient-text">Am</span></h2>
             </div>
-            
-            <div class="cert-grid">
-                
-                <a href="images/certifications/IIT_DA.png" data-lightbox="certs" data-title="Advanced Data Analytics Certification" class="cert-card glass-card hidden-animate">
-                    <img src="images/certifications/IIT_DA.png" alt="Advanced Data Analytics">
-                </a>
-                <a href="images/certifications/analytixlabs_DA.png" data-lightbox="certs" data-title="Certified Data Analyst (SQL/Power BI)" class="cert-card glass-card hidden-animate">
-                    <img src="images/certifications/analytixlabs_DA.png" alt="Certified Data Analyst">
-                </a>
-                 <a href="images/certifications/analytixlabs_DA_python.png" data-lightbox="certs" data-title="Certified Data Analyst (Python)" class="cert-card glass-card hidden-animate">
-                    <img src="images/certifications/analytixlabs_DA_python.png" alt="Certified Data Analyst Python">
-                </a>
+            <div class="about-content">
+                <div class="about-glass-card">
+                    <div class="about-text">
+                        <p class="about-lead">
+                         <p class="about-lead">
+                            I'm a tech enthusiast with an Integrated MTech in Artificial Intelligence, and I enjoy turning data into clear insights that help people make better decisions.
+                        </p>
+                        <p>
+                            As a fresher, I am currently looking for a data analytics opportunity where I can strengthen my fundamentals and work hands-on with real datasets. I like the full process, from collecting and cleaning data to analyzing it and presenting results in a simple, practical way through dashboards and reports.
+                        </p>
+                        <p>
+                            My long-term goal is to move into data science once I have a strong understanding of analytics and business problem-solving. I am interested in learning how to build predictive models and apply machine learning responsibly, and I want to keep growing deeper into AI as I gain experience.
+                        </p>
+                        <p>
+                            I am naturally curious about new technology, especially AI tools. I enjoy exploring new AI techniques, trying different tools, and understanding how they work so I can use them effectively in projects. I like staying updated, experimenting, and learning by building.
+                        </p>
 
-                <a href="images/certifications/aws_certified_solutions_architect.png" data-lightbox="certs" data-title="AWS Solutions Architect Associate" class="cert-card glass-card hidden-animate">
-                    <img src="images/certifications/aws_certified_solutions_architect.png" alt="AWS Solutions Architect">
-                </a>
-                <a href="images/certifications/aws_cloud_practitioner.png" data-lightbox="certs" data-title="AWS Cloud Practitioner" class="cert-card glass-card hidden-animate">
-                    <img src="images/certifications/aws_cloud_practitioner.png" alt="AWS Cloud Practitioner">
-                </a>
-                <a href="images/certifications/azure_ai_fundamentals.png" data-lightbox="certs" data-title="Microsoft Azure AI Fundamentals" class="cert-card glass-card hidden-animate">
-                    <img src="images/certifications/azure_ai_fundamentals.png" alt="Azure AI Fundamentals">
-                </a>
-                <a href="images/certifications/applied_machine_learning.png" data-lightbox="certs" data-title="Applied Machine Learning (UMich)" class="cert-card glass-card hidden-animate">
-                    <img src="images/certifications/applied_machine_learning.png" alt="Applied Machine Learning">
-                </a>
-
-                <a href="images/certifications/tata_certificate.png" data-lightbox="certs" data-title="Tata Data Visualisation Job Simulation" class="cert-card glass-card hidden-animate">
-                    <img src="images/certifications/tata_certificate.png" alt="Tata Job Simulation">
-                </a>
-                 <a href="images/certifications/excel_intermediate_level.png" data-lightbox="certs" data-title="Excel Intermediate Level" class="cert-card glass-card hidden-animate">
-                    <img src="images/certifications/excel_intermediate_level.png" alt="Excel Certificate">
-                </a>
-                 <a href="images/certifications/accenture_certificate.png" data-lightbox="certs" data-title="PW Internship Certificate" class="cert-card glass-card hidden-animate">
-                    <img src="images/certifications/accenture_certificate.png" alt="Accenture Certificate">
-                </a>
+                    </div>
+                    <div class="about-stats" id="aboutStats">
+                        <!-- Stats rendered dynamically -->
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <div class="container contact-container glass-card p-large" style="max-width: 700px;">
-            <p class="subtitle">What's Next?</p>
-            <h2 class="title">Let's Connect</h2>
-            <p class="contact-text">
-                I am actively seeking full-time opportunities in <strong>Data Analytics</strong> and <strong>Business Intelligence</strong>. 
-                If you are looking for a technical analyst who understands the business side of data, my inbox is always open.
-            </p>
-            <a href="mailto:prakhyatsrivastava024@gmail.com" class="btn btn-primary big-btn glow-on-hover">Say Hello</a>
-            
-            <div class="social-links">
-                <a href="https://github.com/Prakhyat-Srivastava" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/prakhyat-nandan-srivastava" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:prakhyatsrivastava024@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                <a href="tel:+918532978811" title="Phone"><i class="fas fa-phone-alt"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="glass-footer">
+    <!-- Technical Skills Section -->
+    <section id="skills" class="skills section">
         <div class="container">
-            <p>Designed & Developed by <strong>Prakhyat Nandan Srivastava</strong></p>
-            <p class="copyright">&copy; 2026. Built for the modern data era.</p>
+            <div class="section-header">
+                <span class="section-tag">My Expertise</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+            </div>
+            <div class="skills-grid" id="skillsGrid">
+                <!-- Skills rendered dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="technologies section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tools & Platforms</span>
+                <h2 class="section-title">Technologies I <span class="gradient-text">Use</span></h2>
+            </div>
+            <div class="technologies-grid" id="technologiesGrid">
+                <!-- Technologies rendered dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tools Section -->
+    <section id="ai-tools" class="ai-tools section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Productivity Boosters</span>
+                <h2 class="section-title">AI Tools I <span class="gradient-text">Leverage</span></h2>
+                <p class="section-subtitle">Supercharging my workflow with cutting-edge AI assistants</p>
+            </div>
+            <div class="ai-tools-grid" id="aiToolsGrid">
+                <!-- AI Tools rendered dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects rendered dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Professional Credentials</span>
+                <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+            </div>
+            <div class="certifications-grid" id="certificationsGrid">
+                <!-- Certifications rendered dynamically -->
+            </div>
+            <div class="cert-stats" id="certStats">
+                <!-- Cert stats rendered dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+            </div>
+            <div class="timeline" id="experienceTimeline">
+                <!-- Experience rendered dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Academic Background</span>
+                <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+            </div>
+            <div class="education-grid" id="educationGrid">
+                <!-- Education rendered dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="research section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Publication</span>
+                <h2 class="section-title">My <span class="gradient-text">Research</span></h2>
+            </div>
+            <div class="research-card" id="researchCard">
+                <!-- Research rendered dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ready to collaborate?</h3>
+                    <p>I'm currently open to new opportunities in data analytics, machine learning, and AI projects. Whether you have a project in mind or just want to chat about data, I'd love to hear from you!</p>
+                    <div class="contact-cards">
+                        <a href="mailto:prakhyatsrivastava024@gmail.com?subject=Opportunity%20from%20Portfolio&body=Hi%20Prakhyat,%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity%20with%20you.%0A%0ABest%20regards" class="contact-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">prakhyatsrivastava024@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+918532978811" class="contact-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+91 8532978811</span>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/918532978811?text=Hi%20Prakhyat,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you!" target="_blank" class="contact-card whatsapp-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">WhatsApp</span>
+                                <span class="contact-value">+91 8532978811</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact-social">
+                        <span>Or find me on:</span>
+                        <div class="social-row">
+                            <a href="https://linkedin.com/in/prakhyat-nandan-srivastava" target="_blank" class="social-btn linkedin">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                LinkedIn
+                            </a>
+                            <a href="https://github.com/Prakhyat-Srivastava" target="_blank" class="social-btn github">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">PNS</span>
+                    <p class="footer-tagline">Data Analyst | Transforming Data into Insights</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#technologies">Technologies</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/prakhyat-nandan-srivastava" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="https://github.com/Prakhyat-Srivastava" target="_blank" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="mailto:prakhyatsrivastava024@gmail.com?subject=Opportunity%20from%20Portfolio&body=Hi%20Prakhyat,%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity%20with%20you.%0A%0ABest%20regards" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </a>
+                    <a href="https://wa.me/918532978811?text=Hi%20Prakhyat,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you!" target="_blank" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Prakhyat Nandan Srivastava. All rights reserved.</p>
+                <a href="assets/resume.pdf" target="_blank" class="resume-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                        <polyline points="10 9 9 9 8 9"/>
+                    </svg>
+                    Download Resume
+                </a>
+            </div>
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- Certificate Modal -->
+    <div class="modal" id="certModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            <img src="" alt="Certificate" class="modal-image" id="modalImage">
+            <div class="modal-info" id="modalInfo"></div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="notification-toast" id="notificationToast">
+        <div class="notification-content">
+            <div class="notification-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                </svg>
+            </div>
+            <div class="notification-text">
+                <h4>Let's Work Together!</h4>
+                <p>I'm available for new opportunities</p>
+            </div>
+            <div class="notification-actions">
+                <a href="#contact" class="notification-btn" id="toastHireBtn">Hire Me</a>
+                <button class="notification-close" id="toastClose">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6L6 18M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
-
-
